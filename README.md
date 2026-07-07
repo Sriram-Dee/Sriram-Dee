@@ -8,25 +8,34 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=Full-Stack+MERN+Developer+%F0%9F%9A%80;React+%7C+Node.js+%7C+MongoDB+%7C+Express;Building+Scalable+Web+Applications;Always+Learning%2C+Always+Growing+%E2%9A%A1)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=650&lines=Full-Stack+MERN+Developer+%F0%9F%9A%80;3+Years+of+Professional+Experience;React+%7C+Redux+%7C+Node.js+%7C+Express.js;Building+Scalable+Web+Applications+%E2%9A%A1)](https://git.io/typing-svg)
 
 </div>
 
 <br/>
 
-<img align="right" alt="Coding" width="380" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif">
+---
 
-### 💫 About Me
+## 💫 About Me
 
-- 💼 **Junior Software Engineer** at **HEPL** (Hema's Enterprise Pvt Ltd)
-- 🌱 Currently mastering **advanced MERN patterns**, RTK-Query & Socket.io
-- 🧠 Self-taught developer with a passion for building real-world solutions
-- 📍 Based in **Cuddalore, Tamil Nadu, India**
-- ⚡ I love building tools that solve real problems & interactive study guides
-- 📫 Reach me: **sriram14jeeva12@gmail.com**
+<img align="right" alt="Coding" width="340" src="https://user-images.githubusercontent.com/74038190/229223263-cf2e4b07-2615-4f87-9c38-e37600f8381a.gif">
+
+A results-driven **Full-Stack MERN Developer** with **3 years of professional experience** crafting scalable web applications, high-performance REST APIs, and responsive user interfaces. Currently serving as a **Junior Software Engineer at HEPL (Hema's Enterprise Pvt Ltd)**, where I architect and deliver end-to-end solutions — from secure authentication systems to real-time features — using React, Redux, Node.js, and Express.js.
+
+I'm a self-taught engineer who values clean code, maintainable architecture, and shipping features that genuinely move the needle for users and businesses alike.
 
 <br/>
-<br/>
+
+| | |
+|:---|:---|
+| 💼 **Role** | Junior Software Engineer |
+| 🏢 **Organization** | HEPL – Hema's Enterprise Pvt Ltd |
+| 🗓️ **Experience** | 3 Years in Full-Stack Development |
+| ⚙️ **Core Stack** | React · Redux · Node.js · Express.js · TailwindCSS |
+| 🌱 **Currently Exploring** | RTK-Query · Socket.io · Next.js · MongoDB Aggregations |
+| 📍 **Location** | Cuddalore, Tamil Nadu, India |
+| 📫 **Contact** | sriram14jeeva12@gmail.com |
+
 <br/>
 <br/>
 
@@ -38,13 +47,13 @@
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![Redux](https://img.shields.io/badge/Redux-764ABC?style=for-the-badge&logo=redux&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ### Backend & Database

@@ -2,74 +2,116 @@
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#0d1117"/>
-      <stop offset="50%" style="stop-color:#0a1628"/>
-      <stop offset="100%" style="stop-color:#050d1a"/>
+      <stop offset="100%" style="stop-color:#0a0e1a"/>
     </linearGradient>
     <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#00d4ff"/>
       <stop offset="50%" style="stop-color:#7b2ff7"/>
       <stop offset="100%" style="stop-color:#ff6b6b"/>
     </linearGradient>
-    <linearGradient id="text-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="name-grad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" style="stop-color:#ffffff"/>
       <stop offset="100%" style="stop-color:#a0c4ff"/>
     </linearGradient>
     <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
     <filter id="glow2">
       <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,212,255,0.06)" stroke-width="1"/>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="rgba(0,212,255,0.12)"/>
     </pattern>
   </defs>
 
+  <!-- Background -->
   <rect width="860" height="280" fill="url(#bg)"/>
-  <rect width="860" height="280" fill="url(#grid)"/>
+  <rect width="860" height="280" fill="url(#dots)"/>
 
-  <circle cx="720" cy="60" r="120" fill="none" stroke="rgba(123,47,247,0.15)" stroke-width="1"/>
-  <circle cx="720" cy="60" r="90" fill="none" stroke="rgba(0,212,255,0.12)" stroke-width="1"/>
-  <circle cx="720" cy="60" r="60" fill="none" stroke="rgba(255,107,107,0.10)" stroke-width="1"/>
-  <circle cx="720" cy="60" r="200" fill="none" stroke="rgba(123,47,247,0.07)" stroke-width="1"/>
+  <!-- Subtle panel backgrounds -->
+  <rect x="0" y="3" width="430" height="274" fill="rgba(0,212,255,0.02)"/>
+  <rect x="430" y="3" width="430" height="274" fill="rgba(123,47,247,0.03)"/>
 
-  <circle cx="730" cy="55" r="55" fill="rgba(123,47,247,0.18)" filter="url(#glow2)"/>
-  <circle cx="780" cy="160" r="35" fill="rgba(0,212,255,0.12)" filter="url(#glow2)"/>
-  <circle cx="650" cy="200" r="25" fill="rgba(255,107,107,0.10)" filter="url(#glow2)"/>
+  <!-- Decorative glows -->
+  <circle cx="820" cy="45" r="65" fill="rgba(123,47,247,0.07)" filter="url(#glow2)"/>
+  <circle cx="825" cy="235" r="45" fill="rgba(0,212,255,0.07)" filter="url(#glow2)"/>
+  <circle cx="30" cy="250" r="40" fill="rgba(255,107,107,0.05)" filter="url(#glow2)"/>
 
-  <text x="620" y="80" font-family="monospace" font-size="18" fill="rgba(0,212,255,0.3)" filter="url(#glow)">&lt;/&gt;</text>
-  <text x="780" y="100" font-family="monospace" font-size="14" fill="rgba(123,47,247,0.4)" filter="url(#glow)">{ }</text>
-  <text x="700" y="220" font-family="monospace" font-size="12" fill="rgba(255,107,107,0.35)" filter="url(#glow)">=&gt;</text>
-  <text x="800" y="50" font-family="monospace" font-size="11" fill="rgba(0,212,255,0.25)">npm</text>
-  <text x="640" y="150" font-family="monospace" font-size="10" fill="rgba(123,47,247,0.3)">API</text>
-  <text x="820" y="200" font-family="monospace" font-size="10" fill="rgba(255,107,107,0.25)">git</text>
-
+  <!-- Top accent bar -->
   <rect x="0" y="0" width="860" height="3" fill="url(#accent)"/>
 
-  <text x="52" y="78" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" fill="rgba(0,212,255,0.9)" font-weight="500" filter="url(#glow)">Hello World! I'm</text>
-  <text x="50" y="138" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="46" fill="url(#text-grad)" font-weight="800" filter="url(#glow)">Sriram R</text>
+  <!-- Vertical divider (dashed) -->
+  <line x1="430" y1="22" x2="430" y2="258" stroke="rgba(0,212,255,0.18)" stroke-width="1" stroke-dasharray="5,4"/>
 
-  <rect x="50" y="152" width="260" height="30" rx="15" fill="rgba(0,212,255,0.12)" stroke="rgba(0,212,255,0.4)" stroke-width="1"/>
-  <text x="180" y="172" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" fill="#00d4ff" text-anchor="middle" font-weight="600">Full-Stack MERN Developer</text>
+  <!-- ============ LEFT PANEL ============ -->
 
-  <rect x="50" y="196" width="60" height="22" rx="11" fill="rgba(97,218,251,0.15)" stroke="rgba(97,218,251,0.5)" stroke-width="1"/>
-  <text x="80" y="211" font-family="monospace" font-size="11" fill="#61DAFB" text-anchor="middle">React</text>
+  <!-- Greeting -->
+  <text x="40" y="65" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" fill="rgba(0,212,255,0.85)" font-weight="400" filter="url(#glow)">Hello, I'm 👋</text>
 
-  <rect x="118" y="196" width="65" height="22" rx="11" fill="rgba(51,153,51,0.15)" stroke="rgba(51,153,51,0.5)" stroke-width="1"/>
-  <text x="150" y="211" font-family="monospace" font-size="11" fill="#339933" text-anchor="middle">Node.js</text>
+  <!-- Name -->
+  <text x="38" y="125" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="50" fill="url(#name-grad)" font-weight="800" filter="url(#glow)">Sriram R</text>
 
-  <rect x="191" y="196" width="75" height="22" rx="11" fill="rgba(71,162,72,0.15)" stroke="rgba(71,162,72,0.5)" stroke-width="1"/>
-  <text x="228" y="211" font-family="monospace" font-size="11" fill="#47A248" text-anchor="middle">MongoDB</text>
+  <!-- Role pill -->
+  <rect x="38" y="141" width="265" height="28" rx="14" fill="rgba(0,212,255,0.09)" stroke="rgba(0,212,255,0.32)" stroke-width="1"/>
+  <text x="170" y="160" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12.5" fill="#00d4ff" text-anchor="middle" font-weight="600">Full-Stack MERN Developer</text>
 
-  <rect x="274" y="196" width="68" height="22" rx="11" fill="rgba(0,0,0,0.25)" stroke="rgba(200,200,200,0.4)" stroke-width="1"/>
-  <text x="308" y="211" font-family="monospace" font-size="11" fill="#eeeeee" text-anchor="middle">Next.js</text>
+  <!-- Badge row -->
+  <!-- Experience -->
+  <rect x="38" y="182" width="128" height="26" rx="13" fill="rgba(123,47,247,0.14)" stroke="rgba(123,47,247,0.38)" stroke-width="1"/>
+  <text x="102" y="200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" fill="#c4b5fd" text-anchor="middle" font-weight="600">⏱ 3 Yrs Exp</text>
 
-  <circle cx="46" cy="248" r="5" fill="#00ff88">
-    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  <!-- Company -->
+  <rect x="176" y="182" width="108" height="26" rx="13" fill="rgba(255,107,107,0.1)" stroke="rgba(255,107,107,0.32)" stroke-width="1"/>
+  <text x="230" y="200" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="11.5" fill="#fca5a5" text-anchor="middle" font-weight="600">🏢 HEPL</text>
+
+  <!-- Location with pulse dot -->
+  <circle cx="43" cy="238" r="4.5" fill="#22c55e">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite"/>
   </circle>
-  <text x="56" y="252" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" fill="rgba(160,196,255,0.7)">Cuddalore, TN  |  HEPL  |  Open to opportunities</text>
+  <text x="54" y="243" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="12" fill="rgba(148,196,255,0.7)">📍 Cuddalore, Tamil Nadu, India</text>
 
+  <!-- ============ RIGHT PANEL ============ -->
+
+  <!-- Skills header -->
+  <text x="460" y="52" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13.5" fill="#a78bfa" font-weight="700" filter="url(#glow)">⚡ Tech Skills</text>
+  <rect x="460" y="58" width="360" height="1" fill="rgba(123,47,247,0.22)"/>
+
+  <!-- ── Row 1: React | Redux ── -->
+
+  <!-- React card -->
+  <rect x="460" y="72" width="168" height="52" rx="9" fill="rgba(97,218,251,0.07)" stroke="rgba(97,218,251,0.35)" stroke-width="1"/>
+  <rect x="460" y="72" width="4" height="52" rx="2" fill="#61DAFB"/>
+  <text x="476" y="95" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" fill="#61DAFB" font-weight="700">⚛ React</text>
+  <text x="476" y="113" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5" fill="rgba(97,218,251,0.5)">UI Library · Hooks · JSX</text>
+
+  <!-- Redux card -->
+  <rect x="644" y="72" width="176" height="52" rx="9" fill="rgba(118,74,188,0.08)" stroke="rgba(118,74,188,0.38)" stroke-width="1"/>
+  <rect x="644" y="72" width="4" height="52" rx="2" fill="#a78bfa"/>
+  <text x="660" y="95" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" fill="#a78bfa" font-weight="700">◈ Redux</text>
+  <text x="660" y="113" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5" fill="rgba(167,139,250,0.5)">State · RTK-Query · Thunk</text>
+
+  <!-- ── Row 2: TailwindCSS | Node.js ── -->
+
+  <!-- TailwindCSS card -->
+  <rect x="460" y="136" width="168" height="52" rx="9" fill="rgba(6,182,212,0.07)" stroke="rgba(6,182,212,0.35)" stroke-width="1"/>
+  <rect x="460" y="136" width="4" height="52" rx="2" fill="#06B6D4"/>
+  <text x="476" y="159" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="13" fill="#06B6D4" font-weight="700">◎ TailwindCSS</text>
+  <text x="476" y="177" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5" fill="rgba(6,182,212,0.5)">Utility-First · Responsive</text>
+
+  <!-- Node.js card -->
+  <rect x="644" y="136" width="176" height="52" rx="9" fill="rgba(51,153,51,0.08)" stroke="rgba(74,222,128,0.35)" stroke-width="1"/>
+  <rect x="644" y="136" width="4" height="52" rx="2" fill="#4ade80"/>
+  <text x="660" y="159" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" fill="#4ade80" font-weight="700">⬡ Node.js</text>
+  <text x="660" y="177" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5" fill="rgba(74,222,128,0.5)">Runtime · REST · JWT</text>
+
+  <!-- ── Row 3: Express.js (centered) ── -->
+  <rect x="552" y="200" width="176" height="52" rx="9" fill="rgba(156,163,175,0.07)" stroke="rgba(156,163,175,0.28)" stroke-width="1"/>
+  <rect x="552" y="200" width="4" height="52" rx="2" fill="#9ca3af"/>
+  <text x="568" y="223" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" fill="#d1d5db" font-weight="700">▶ Express.js</text>
+  <text x="568" y="241" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="10.5" fill="rgba(209,213,219,0.45)">Web Framework · APIs</text>
+
+  <!-- Bottom accent bar -->
   <rect x="0" y="277" width="860" height="3" fill="url(#accent)"/>
 </svg>
